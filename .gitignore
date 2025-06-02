@@ -1,0 +1,31 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.env/
+*/.venv/
+*/venv/
+*/ENV/
+*/env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# Streamlit secrets (if local and not meant for repo)
+# .streamlit/secrets.toml # Only if you don't want to commit an example/template
+
+# OS specific
+.DS_Store
+Thumbs.db
