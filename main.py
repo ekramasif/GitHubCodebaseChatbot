@@ -164,7 +164,7 @@ else:
             try:
                 genai.configure(api_key=gemini_api_key)
                 model = genai.GenerativeModel(
-                    model_name="gemini-1.5-flash-latest",
+                    model_name="gemini-2.0-flash",
                     system_instruction=f"""
 You are an expert AI programming assistant.
 
