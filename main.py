@@ -276,11 +276,11 @@ Be concise and helpful. If the user asks for code, provide it in markdown format
 If the question is outside the scope of the provided code, politely state that you cannot answer.
 If the provided code is very long (especially for full repository analysis), acknowledge that you might not be able to process every single detail but will do your best based on the overall structure and searchable content.
 """
-                # For Gemini 1.5 Flash, which has a large context window, sending the full repo might work
+                # For Gemini 2.0 Flash, which has a large context window, sending the full repo might work
                 # For other models, this might be too much. Consider truncation or summarization for repo_code_full if using models with smaller context windows.
                 
                 model = genai.GenerativeModel(
-                    model_name="gemini-1.5-flash-latest", # Use a model that supports large context if sending full repo
+                    model_name="gemini-2.0-flash", # Use a model that supports large context if sending full repo
                     system_instruction=system_instruction
                 )
                 
